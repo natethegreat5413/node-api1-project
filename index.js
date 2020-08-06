@@ -1,4 +1,4 @@
-
+require('dotenv').config()
 // import express
 const express = require('express');
 const shortid = require('shortid');
