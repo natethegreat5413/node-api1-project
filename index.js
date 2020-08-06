@@ -1,3 +1,4 @@
+
 // import express
 const express = require('express');
 const shortid = require('shortid');
@@ -82,7 +83,7 @@ server.delete('/api/users/:id', (req, res) => {
     }
 })
 
-const PORT = 5000;
-server.listen(PORT, () => {
-    console.log('listening on localhost:', PORT)
+const port = process.env.PORT || 5000;
+server.listen(port, () => {
+    console.log(`\n*** Server Running on http://localhost:${port} ***\n`)
 })
